@@ -1,0 +1,120 @@
+2024-07-18 14:16:11.168 WARN  [main] com.alibaba.nacos.client.logging.NacosLogging.loadConfiguration:64 : Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from null
+2024-07-18 14:16:11.171 WARN  [main] com.alibaba.nacos.client.logging.NacosLogging.loadConfiguration:64 : Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from null
+2024-07-18 14:16:11.426 WARN  [main] com.alibaba.nacos.client.logging.NacosLogging.loadConfiguration:64 : Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from null
+2024-07-18 14:16:11.644 WARN  [main] com.alibaba.nacos.client.logging.NacosLogging.loadConfiguration:64 : Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from null
+2024-07-18 14:16:11.644 WARN  [main] com.alibaba.nacos.client.logging.NacosLogging.loadConfiguration:64 : Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from null
+2024-07-18 14:16:21.637 WARN  [main] com.alibaba.nacos.client.config.NacosConfigService.getConfigInner:177 : [fixed-localhost_8848] [get-config] get from server error, dataId=provider-demo, group=DEFAULT_GROUP, tenant=, msg=ErrCode:-401, ErrMsg:Client not connected, current status:STARTING
+2024-07-18 14:16:21.637 WARN  [main] com.alibaba.nacos.client.config.NacosConfigService.getConfigInner:181 : [fixed-localhost_8848] [get-config] get snapshot ok, dataId=provider-demo, group=DEFAULT_GROUP, tenant=, config=
+2024-07-18 14:16:21.639 WARN  [main] com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder.loadNacosData:87 : Ignore the empty nacos configuration and get it based on dataId[provider-demo] & group[DEFAULT_GROUP]
+2024-07-18 14:16:21.962 WARN  [main] com.alibaba.nacos.client.config.NacosConfigService.getConfigInner:177 : [fixed-localhost_8848] [get-config] get from server error, dataId=provider-demo.properties, group=DEFAULT_GROUP, tenant=, msg=ErrCode:-401, ErrMsg:Client not connected, current status:STARTING
+2024-07-18 14:16:21.962 WARN  [main] com.alibaba.nacos.client.config.NacosConfigService.getConfigInner:181 : [fixed-localhost_8848] [get-config] get snapshot ok, dataId=provider-demo.properties, group=DEFAULT_GROUP, tenant=, config=
+2024-07-18 14:16:21.963 WARN  [main] com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder.loadNacosData:87 : Ignore the empty nacos configuration and get it based on dataId[provider-demo.properties] & group[DEFAULT_GROUP]
+2024-07-18 14:16:24.124 WARN  [main] com.netflix.config.sources.URLConfigurationSource.<init>:126 : No URLs will be polled as dynamic configuration sources.
+2024-07-18 14:16:24.127 WARN  [main] com.netflix.config.sources.URLConfigurationSource.<init>:126 : No URLs will be polled as dynamic configuration sources.
+2024-07-18 14:16:30.090 WARN  [com.alibaba.nacos.client.naming.grpc.redo.0] com.alibaba.nacos.client.naming.run:46 : Grpc Connection is disconnect, skip current redo task
+2024-07-18 14:16:33.101 WARN  [com.alibaba.nacos.client.naming.grpc.redo.0] com.alibaba.nacos.client.naming.run:46 : Grpc Connection is disconnect, skip current redo task
+2024-07-18 14:16:36.108 WARN  [com.alibaba.nacos.client.naming.grpc.redo.0] com.alibaba.nacos.client.naming.run:46 : Grpc Connection is disconnect, skip current redo task
+2024-07-18 14:16:36.789 WARN  [main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext.refresh:559 : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is java.lang.reflect.UndeclaredThrowableException
+2024-07-18 14:16:37.117 WARN  [main] com.alibaba.nacos.client.naming.shutdown:74 : [NamingHttpClientManager] Start destroying NacosRestTemplate
+2024-07-18 14:16:37.118 WARN  [main] com.alibaba.nacos.client.naming.shutdown:81 : [NamingHttpClientManager] Destruction of the end
+2024-07-18 14:16:37.118 WARN  [main] com.alibaba.nacos.client.naming.shutdown:74 : [NamingHttpClientManager] Start destroying NacosRestTemplate
+2024-07-18 14:16:37.118 WARN  [main] com.alibaba.nacos.client.naming.shutdown:81 : [NamingHttpClientManager] Destruction of the end
+2024-07-18 14:16:37.336 WARN  [com.alibaba.nacos.client.naming.updater.0] com.alibaba.nacos.client.naming.run:198 : [NA] failed to update serviceName: DEFAULT_GROUP@@provider-demo
+com.alibaba.nacos.api.exception.NacosException: Request nacos server failed: 
+	at com.alibaba.nacos.client.naming.remote.gprc.NamingGrpcClientProxy.requestToServer(NamingGrpcClientProxy.java:288)
+	at com.alibaba.nacos.client.naming.remote.gprc.NamingGrpcClientProxy.queryInstancesOfService(NamingGrpcClientProxy.java:168)
+	at com.alibaba.nacos.client.naming.remote.NamingClientProxyDelegate.queryInstancesOfService(NamingClientProxyDelegate.java:110)
+	at com.alibaba.nacos.client.naming.core.ServiceInfoUpdateService$UpdateTask.run(ServiceInfoUpdateService.java:178)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: com.alibaba.nacos.api.exception.NacosException: Client not connected, current status:SHUTDOWN
+	at com.alibaba.nacos.common.remote.client.RpcClient.request(RpcClient.java:651)
+	at com.alibaba.nacos.common.remote.client.RpcClient.request(RpcClient.java:631)
+	at com.alibaba.nacos.client.naming.remote.gprc.NamingGrpcClientProxy.requestToServer(NamingGrpcClientProxy.java:278)
+	... 11 common frames omitted
+2024-07-18 14:16:42.193 WARN  [com.alibaba.nacos.client.naming.grpc.redo.0] com.alibaba.nacos.client.naming.run:46 : Grpc Connection is disconnect, skip current redo task
+2024-07-18 14:16:45.201 WARN  [com.alibaba.nacos.client.naming.grpc.redo.0] com.alibaba.nacos.client.naming.run:46 : Grpc Connection is disconnect, skip current redo task
+2024-07-18 14:16:48.203 WARN  [com.alibaba.nacos.client.naming.grpc.redo.0] com.alibaba.nacos.client.naming.run:46 : Grpc Connection is disconnect, skip current redo task
+2024-07-18 14:16:48.698 WARN  [Thread-6] com.alibaba.nacos.common.http.HttpClientBeanHolder.shutdown:108 : [HttpClientBeanHolder] Start destroying common HttpClient
+2024-07-18 14:16:48.698 WARN  [Thread-15] com.alibaba.nacos.common.notify.NotifyCenter.shutdown:136 : [NotifyCenter] Start destroying Publisher
+2024-07-18 14:16:48.698 WARN  [Thread-15] com.alibaba.nacos.common.notify.NotifyCenter.shutdown:153 : [NotifyCenter] Destruction of the end
+2024-07-18 14:16:48.698 WARN  [Thread-6] com.alibaba.nacos.common.http.HttpClientBeanHolder.shutdown:114 : [HttpClientBeanHolder] Destruction of the end
+2024-07-18 14:17:29.389 WARN  [main] com.alibaba.nacos.client.logging.NacosLogging.loadConfiguration:64 : Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from null
+2024-07-18 14:17:29.392 WARN  [main] com.alibaba.nacos.client.logging.NacosLogging.loadConfiguration:64 : Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from null
+2024-07-18 14:17:29.647 WARN  [main] com.alibaba.nacos.client.logging.NacosLogging.loadConfiguration:64 : Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from null
+2024-07-18 14:17:29.857 WARN  [main] com.alibaba.nacos.client.logging.NacosLogging.loadConfiguration:64 : Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from null
+2024-07-18 14:17:29.857 WARN  [main] com.alibaba.nacos.client.logging.NacosLogging.loadConfiguration:64 : Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from null
+2024-07-18 14:17:32.978 WARN  [main] com.netflix.config.sources.URLConfigurationSource.<init>:126 : No URLs will be polled as dynamic configuration sources.
+2024-07-18 14:17:32.981 WARN  [main] com.netflix.config.sources.URLConfigurationSource.<init>:126 : No URLs will be polled as dynamic configuration sources.
+2024-07-18 14:20:08.702 WARN  [Thread-15] com.alibaba.nacos.common.notify.NotifyCenter.shutdown:136 : [NotifyCenter] Start destroying Publisher
+2024-07-18 14:20:08.702 WARN  [Thread-6] com.alibaba.nacos.common.http.HttpClientBeanHolder.shutdown:108 : [HttpClientBeanHolder] Start destroying common HttpClient
+2024-07-18 14:20:08.702 WARN  [Thread-15] com.alibaba.nacos.common.notify.NotifyCenter.shutdown:153 : [NotifyCenter] Destruction of the end
+2024-07-18 14:20:08.703 WARN  [Thread-6] com.alibaba.nacos.common.http.HttpClientBeanHolder.shutdown:114 : [HttpClientBeanHolder] Destruction of the end
+2024-07-18 14:20:11.732 WARN  [main] com.alibaba.nacos.client.logging.NacosLogging.loadConfiguration:64 : Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from null
+2024-07-18 14:20:11.735 WARN  [main] com.alibaba.nacos.client.logging.NacosLogging.loadConfiguration:64 : Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from null
+2024-07-18 14:20:11.965 WARN  [main] com.alibaba.nacos.client.logging.NacosLogging.loadConfiguration:64 : Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from null
+2024-07-18 14:20:12.186 WARN  [main] com.alibaba.nacos.client.logging.NacosLogging.loadConfiguration:64 : Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from null
+2024-07-18 14:20:12.186 WARN  [main] com.alibaba.nacos.client.logging.NacosLogging.loadConfiguration:64 : Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from null
+2024-07-18 14:20:15.379 WARN  [main] com.netflix.config.sources.URLConfigurationSource.<init>:126 : No URLs will be polled as dynamic configuration sources.
+2024-07-18 14:20:15.383 WARN  [main] com.netflix.config.sources.URLConfigurationSource.<init>:126 : No URLs will be polled as dynamic configuration sources.
+2024-07-18 14:20:49.490 WARN  [Thread-6] com.alibaba.nacos.common.http.HttpClientBeanHolder.shutdown:108 : [HttpClientBeanHolder] Start destroying common HttpClient
+2024-07-18 14:20:49.491 WARN  [Thread-15] com.alibaba.nacos.common.notify.NotifyCenter.shutdown:136 : [NotifyCenter] Start destroying Publisher
+2024-07-18 14:20:49.491 WARN  [Thread-15] com.alibaba.nacos.common.notify.NotifyCenter.shutdown:153 : [NotifyCenter] Destruction of the end
+2024-07-18 14:20:49.491 WARN  [Thread-6] com.alibaba.nacos.common.http.HttpClientBeanHolder.shutdown:114 : [HttpClientBeanHolder] Destruction of the end
+2024-07-18 14:21:32.790 WARN  [main] com.alibaba.nacos.client.logging.NacosLogging.loadConfiguration:64 : Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from null
+2024-07-18 14:21:33.168 WARN  [main] com.alibaba.nacos.client.logging.NacosLogging.loadConfiguration:64 : Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from null
+2024-07-18 14:21:35.006 WARN  [main] com.netflix.config.sources.URLConfigurationSource.<init>:126 : No URLs will be polled as dynamic configuration sources.
+2024-07-18 14:21:35.008 WARN  [main] com.netflix.config.sources.URLConfigurationSource.<init>:126 : No URLs will be polled as dynamic configuration sources.
+2024-07-18 14:21:35.550 WARN  [main] com.alibaba.nacos.client.logging.NacosLogging.loadConfiguration:64 : Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from null
+2024-07-18 17:41:40.478 WARN  [com.alibaba.nacos.client.naming.updater.2] com.alibaba.nacos.client.naming.run:198 : [NA] failed to update serviceName: DEFAULT_GROUP@@provider-demo
+com.alibaba.nacos.api.exception.NacosException: Request nacos server failed: 
+	at com.alibaba.nacos.client.naming.remote.gprc.NamingGrpcClientProxy.requestToServer(NamingGrpcClientProxy.java:288)
+	at com.alibaba.nacos.client.naming.remote.gprc.NamingGrpcClientProxy.queryInstancesOfService(NamingGrpcClientProxy.java:168)
+	at com.alibaba.nacos.client.naming.remote.NamingClientProxyDelegate.queryInstancesOfService(NamingClientProxyDelegate.java:110)
+	at com.alibaba.nacos.client.naming.core.ServiceInfoUpdateService$UpdateTask.run(ServiceInfoUpdateService.java:185)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: com.alibaba.nacos.api.exception.NacosException: Client not connected, current status:UNHEALTHY
+	at com.alibaba.nacos.common.remote.client.RpcClient.request(RpcClient.java:651)
+	at com.alibaba.nacos.common.remote.client.RpcClient.request(RpcClient.java:631)
+	at com.alibaba.nacos.client.naming.remote.gprc.NamingGrpcClientProxy.requestToServer(NamingGrpcClientProxy.java:278)
+	... 11 common frames omitted
+2024-07-18 17:41:42.814 WARN  [com.alibaba.nacos.client.naming.updater.2] com.alibaba.nacos.client.naming.run:198 : [NA] failed to update serviceName: DEFAULT_GROUP@@provider-demo
+com.alibaba.nacos.api.exception.NacosException: Request nacos server failed: 
+	at com.alibaba.nacos.client.naming.remote.gprc.NamingGrpcClientProxy.requestToServer(NamingGrpcClientProxy.java:288)
+	at com.alibaba.nacos.client.naming.remote.gprc.NamingGrpcClientProxy.queryInstancesOfService(NamingGrpcClientProxy.java:168)
+	at com.alibaba.nacos.client.naming.remote.NamingClientProxyDelegate.queryInstancesOfService(NamingClientProxyDelegate.java:110)
+	at com.alibaba.nacos.client.naming.core.ServiceInfoUpdateService$UpdateTask.run(ServiceInfoUpdateService.java:185)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: com.alibaba.nacos.api.exception.NacosException: Client not connected, current status:UNHEALTHY
+	at com.alibaba.nacos.common.remote.client.RpcClient.request(RpcClient.java:651)
+	at com.alibaba.nacos.common.remote.client.RpcClient.request(RpcClient.java:631)
+	at com.alibaba.nacos.client.naming.remote.gprc.NamingGrpcClientProxy.requestToServer(NamingGrpcClientProxy.java:278)
+	... 11 common frames omitted
+2024-07-18 17:41:43.757 WARN  [Thread-18] com.alibaba.nacos.common.notify.NotifyCenter.shutdown:136 : [NotifyCenter] Start destroying Publisher
+2024-07-18 17:41:43.757 WARN  [Thread-21] com.alibaba.nacos.common.http.HttpClientBeanHolder.shutdown:108 : [HttpClientBeanHolder] Start destroying common HttpClient
+2024-07-18 17:41:43.757 WARN  [Thread-18] com.alibaba.nacos.common.notify.NotifyCenter.shutdown:153 : [NotifyCenter] Destruction of the end
+2024-07-18 17:41:43.758 WARN  [Thread-21] com.alibaba.nacos.common.http.HttpClientBeanHolder.shutdown:114 : [HttpClientBeanHolder] Destruction of the end
+2024-07-18 17:41:44.845 WARN  [SpringContextShutdownHook] com.alibaba.nacos.client.naming.shutdown:74 : [NamingHttpClientManager] Start destroying NacosRestTemplate
+2024-07-18 17:41:44.845 WARN  [SpringContextShutdownHook] com.alibaba.nacos.client.naming.shutdown:81 : [NamingHttpClientManager] Destruction of the end
+2024-07-18 17:41:44.846 WARN  [SpringContextShutdownHook] com.alibaba.nacos.client.naming.shutdown:74 : [NamingHttpClientManager] Start destroying NacosRestTemplate
+2024-07-18 17:41:44.846 WARN  [SpringContextShutdownHook] com.alibaba.nacos.client.naming.shutdown:81 : [NamingHttpClientManager] Destruction of the end
